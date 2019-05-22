@@ -1,4 +1,4 @@
-data "terraform_remote_state" "instanceVM" {
+data "terraform_remote_state" "ServiceAppVM" {
   backend = "s3"
   config {
     bucket = "serviceapp-terraformbucket"

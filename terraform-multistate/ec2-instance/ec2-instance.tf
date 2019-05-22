@@ -1,6 +1,6 @@
 resource "aws_instance" "ServiceAppVM" {
-  ami = "ami-0c6b1d09930fac512"
-  instance_type = "t2.micro"
+  ami = "${var.instance_ami}"
+  instance_type = "${var.instance_type}"
   tags {
     Name = "MultistateVM"
   }
